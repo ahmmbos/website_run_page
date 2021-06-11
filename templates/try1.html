@@ -1,0 +1,114 @@
+{%  extends "base.html" %}
+
+{% block title %}Homepage{% endblock %}
+
+
+{%  block content %}
+<header>Homepage</header>
+<nav>
+    <ul>
+     <li><a href="home">Home</a></li>
+      <li><a href="database">Database</a></li>
+      <li><a href="resultaten">Resultaten</a></li>
+      <li><a href="about">Over ons</a></li>
+    </ul>
+</nav>
+
+<section>
+<h1>Introductie</h1>
+</section>
+
+<article>
+<p>
+    <div class="gallery">
+        <img src="/static/3.jpg" alt="stap 3 champignong groei"
+             width="600" height="400">
+    </div>
+
+    <div class="gallery">
+        <img src="/static/2.jpg" alt=" stap 2 champignon groei"
+             width="600" height="400">
+    </div>
+
+    <div class="gallery">
+        <img src="/static/1.jpg" alt="stap 1 champignon groei"
+             width="600" height="400">
+    </div>
+</p>
+<p style="max-width:900px">
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/watch?v=2jK3rYTnRcU">
+    </iframe>
+    <br>
+    <br>
+    Deze website geeft inzage in de samenstelling van compost voor
+    champignon teelt.
+    <a href="https://www.youtube.com/watch?v=2jK3rYTnRcU"
+       target="_blank">Deze video</a> geeft achtergrond informatie
+    van de daadwerkelijke groei van champignons. De samenstelling van
+    de compost is erg van invloed op de champgion productie en de
+    grootte van de champignons. Onderstaande
+    <a href="https://www.youtube.com/watch?v=2jK3rYTnRcU"
+       target="_blank"> video </a> laat zien hoe de compost voor de
+    champgions gemaakt wordt. Onder de tab <a
+            href="http://127.0.0.1:5000/database"> database </a>
+    kan u zoeken of organismen en eiwitten zich tijdens de patorisatie
+    fase in de compost bevinden. In de <a
+            href="http://127.0.0.1:5000/resultaten"> resultaten </a>
+    wordt dezelfde informatie alvast wat inzichtelijker weergeven.
+    <br>
+    <br>
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/watch?v=A9VMJyXcrWc">
+    </iframe>
+    <br>
+    <br>
+    Champignontelers (vertegenwoordigd door het Productschap Tuinbouw
+    en CNC grondstoffen B.V.) willen een duurzame oplossing waarbij een
+    constante kwaliteit van de compost gegarandeerd kan worden en
+    oogstvariaties als gevolg van met name pathogene micro-organismen
+    vermeden worden. Ter indicatie: wanneer er als gevolg van een betere
+    kwaliteit van de compost 5 % meer champignons geproduceerd zouden
+    kunnen worden dan betekent dit in Nederland een
+    productiviteitsverhoging ter waarde van 12-15 mln. Euro per jaar.
+    De Champignontelers hebben daarom de volgende onderzoeksvragen
+    geformuleerd:
+    <br>
+    <br>
+    <ol>
+    <li>Is een betere benutting van de compost door de champignon
+    mogelijk door het reguleren en controleren van de microflora
+        die bij het composteringsproces betrokken is?</li>
+    <br>
+    <li>Kan er een effectieve en geaccepteerde bestrijdingsmethode
+    tegen pathogene micro-organismen en onkruidschimmels in de
+        compost ontwikkeld worden? </li>
+    </ol>
+    <br>
+    Met deze vragen is het HAN Biocentre aan de slag gegaan.
+    <br>
+    <br>
+    De champignon dataset die voor deze website gebruikt is bestaat uit
+    200 sequenties. Dit is een klein percentage van de uiteindelijk
+    miljoenen sequenties die onderzocht moeten worden. De sequenties
+    zijn verkregen door middel van paired-end Illumina sequencing
+    met de MiSeq PE300 op genoomfragmenten van ongeveer 500
+    bp. De afstand tussen de forward (read 1) en de reverse primer
+    (read 2) is door deze methode bekend. Deze informatie kan gebruikt
+    worden in het karakteriserings proces van de organismen en gen
+    functies in de compost.
+</p>
+</article>
+
+<footer>
+  <p> Auteurs:  Max Diekman,
+                Amber Bos
+                en Nienke Gertsen
+      <br>
+      Instelling: Hoge school Arnhem-Nijmegen
+      <br>
+      Jaar: 2020-2021
+  </p>
+</footer>
+
+{% endblock %}<!DOCTYPE html>

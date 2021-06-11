@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('27428742.jpg');
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: #000;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+section {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: darkkhaki;
+  height: 100px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: darkkhaki;
+  height: 1300px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  float:right
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the footer */
+footer {
+  background-color: #666;
+  padding: 10px;
+  text-align: left;
+  color: lightgray;
+}
+/* Style the tables */
+th {
+  text-align: left; }
+table, th, td {
+  border: 1px solid black;}

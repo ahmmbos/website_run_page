@@ -1,0 +1,58 @@
+{%  extends "base.html" %}
+
+{% block title %}Database{% endblock %}
+
+
+{%  block content %}
+<header>Database</header>
+<nav>
+    <ul>
+      <li><a href="home">Home</a></li>
+      <li><a href="database">Database</a></li>
+      <li><a href="resultaten">Resultaten</a></li>
+      <li><a href="about">Over ons</a></li>
+    </ul>
+</nav>
+<h1>Search through the database:</h1>
+<form method="get">
+	<p>Enter search word: <input type="text" name="search"><button type="submit">Submit</button></p>
+</form>
+<hr>
+<h3>Results found: {{amount}}</h3>
+<table border="1" style="background-color: lightgray; width: 100%">
+	<tr>
+		<td><b>Header</b></td>
+		<td><b>Accession number</b></td>
+		<td><b>Name organism</b></td>
+		<td><b>Domain</b></td>
+		<td><b>Family</b></td>
+		<td><b>Genus</b></td>
+		<td><b>Species</b></td>
+		<td><b>Protein description</b></td>
+		<td><b>Reliability %</b></td>
+		<td><b>Identity %</b></td>
+		<td><b>E-value</b></td>
+{% for value in hits %}
+   <tr>
+   {% for i in value %}
+   	{% if i[-1] == ';' %}
+   		<td><b>{{i.replace(";", "")}}</b></td>
+   	{% else %}
+   		<td>{{i}}</td>
+   	{% endif %}
+   {% endfor %}
+   </tr>
+{% endfor %}
+</table>
+<footer>
+  <p> Auteurs:  Max Diekman,
+                Amber Bos
+                en Nienke Gertsen
+      <br>
+      Instelling: Hoge school Arnhem-Nijmegen
+      <br>
+      Jaar: 2020-2021
+  </p>
+</footer>
+
+{% endblock %}<!DOCTYPE html>
